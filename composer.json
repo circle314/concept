@@ -1,0 +1,23 @@
+{
+    "name": "circle314/concept",
+    "type": "library",
+    "description": "Circle314 Framework - Concept Component",
+    "keywords": ["circle314", "framework"],
+    "homepage": "http://www.circle314.com/",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "Kjartan Johansen",
+            "email": "kjartan@artofwar.cc"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Circle314\\Concept\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
