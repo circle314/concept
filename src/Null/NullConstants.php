@@ -3,7 +3,7 @@
 namespace Circle314\Concept\Null;
 
 /**
- * Constants for null or non-existent concepts
+ * Constants for empty, null, or non-existent concepts
  *
  * @package     Circle314\Concept
  * @author      Kjartan Johansen <kjartan@artofwar.cc>
@@ -14,6 +14,7 @@ namespace Circle314\Concept\Null;
 abstract class NullConstants
 {
     #region Constants
+    const EMPTY_JSON_OBJECT = '{}';
     const NO_DEFAULT_VALUE = '__NO_DEFAULT_VALUE__';
     const NON_EXISTENT_PARAMETER = '__NON_EXISTENT_PARAMETER__';
     const NO_RESPONSE_EXISTS = '__NO_RESPONSE_EXISTS__';
