@@ -10,6 +10,7 @@ namespace Circle314\Concept\Value;
  * @copyright   Copyright (c) Kjartan Johansen
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
+ * @deprecated  1.1 No longer user by internal code and not recommended
  */
 interface ValueSettableFromArrayInterface
 {

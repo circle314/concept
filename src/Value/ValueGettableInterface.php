@@ -2,6 +2,8 @@
 
 namespace Circle314\Concept\Value;
 
+use Circle314\Concept\Value\Gettable\GettableValueInterface;
+
 /**
  * An interface for getting values
  *
@@ -10,6 +12,8 @@ namespace Circle314\Concept\Value;
  * @copyright   Copyright (c) Kjartan Johansen
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
+ * @deprecated  1.1
+ * @see         GettableValueInterface
  */
 interface ValueGettableInterface
 {

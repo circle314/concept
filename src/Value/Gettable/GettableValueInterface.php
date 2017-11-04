@@ -1,21 +1,16 @@
 <?php
 
-namespace Circle314\Concept\Value;
-
-use Circle314\Concept\Value\Settable\SettableValueInterface;
+namespace Circle314\Concept\Value\Gettable;
 
 /**
- * An interface for setting values
+ * An interface for gettable value commands and queries
  *
  * @package     Circle314\Concept
  * @author      Kjartan Johansen <kjartan@artofwar.cc>
  * @copyright   Copyright (c) Kjartan Johansen
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
- * @deprecated  1.1
- * @see         SettableValueInterface
  */
-interface ValueSettableInterface
+interface GettableValueInterface extends GettableValueCommandInterface, GettableValueQueryInterface
 {
-    public function setValue($value);
 }
