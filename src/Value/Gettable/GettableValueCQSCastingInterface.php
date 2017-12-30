@@ -7,11 +7,6 @@ use Circle314\Component\CQS\CQSCastingInterface;
 interface GettableValueCQSCastingInterface extends CQSCastingInterface
 {
     /**
-     * @return GettableValueInterface
-     */
-    public function asCommandsAndQueries();
-
-    /**
      * @return GettableValueCQSCommandInterface
      */
     public function asCommandsOnly();
