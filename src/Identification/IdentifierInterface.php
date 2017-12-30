@@ -1,6 +1,7 @@
 <?php
 
 namespace Circle314\Concept\Identification;
+use Circle314\Component\CQS\CQSInterface;
 
 /**
  * An interface for complete identification and manipulation of identifiers
@@ -11,6 +12,23 @@ namespace Circle314\Concept\Identification;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface IdentifierInterface extends HasIdentifierInterface, DeleteIdentifierInterface, GetIdentifierInterface, SaveIdentifierInterface
+interface IdentifierInterface extends
+    CQSInterface,
+    IdentifierCommandInterface,
+    IdentifierQueryInterface
 {
+    /**
+     * @return IdentifierInterface
+     */
+    public function asCommandsAndQueries();
+
+    /**
+     * @return IdentifierCommandInterface
+     */
+    public function asCommandsOnly();
+
+    /**
+     * @return IdentifierQueryInterface
+     */
+    public function asQueriesOnly();
 }

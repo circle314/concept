@@ -2,6 +2,8 @@
 
 namespace Circle314\Concept\Value\Gettable;
 
+use Circle314\Component\CQS\CQSCommandInterface;
+
 /**
  * An interface for gettable value commands
  *
@@ -11,6 +13,6 @@ namespace Circle314\Concept\Value\Gettable;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface GettableValueCommandInterface
+interface GettableValueCommandInterface extends CQSCommandInterface
 {
 }

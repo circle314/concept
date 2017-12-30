@@ -2,6 +2,8 @@
 
 namespace Circle314\Concept\Value\Defaultable;
 
+use Circle314\Component\CQS\CQSQueryInterface;
+
 /**
  * An interface for defaultable value queries
  *
@@ -11,8 +13,8 @@ namespace Circle314\Concept\Value\Defaultable;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface DefaultableValueQueryInterface
+interface DefaultableValueQueryInterface extends CQSQueryInterface
 {
     public function getDefaultValue();
-    public function hasDefaultValue() : bool;
+    public function hasDefaultValue(): bool;
 }

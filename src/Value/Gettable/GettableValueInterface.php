@@ -1,6 +1,7 @@
 <?php
 
 namespace Circle314\Concept\Value\Gettable;
+use Circle314\Component\CQS\CQSInterface;
 
 /**
  * An interface for gettable value commands and queries
@@ -11,6 +12,23 @@ namespace Circle314\Concept\Value\Gettable;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface GettableValueInterface extends GettableValueCommandInterface, GettableValueQueryInterface
+interface GettableValueInterface extends
+    CQSInterface,
+    GettableValueCommandInterface,
+    GettableValueQueryInterface
 {
+    /**
+     * @return GettableValueInterface
+     */
+    public function asCommandsAndQueries();
+
+    /**
+     * @return GettableValueCommandInterface
+     */
+    public function asCommandsOnly();
+
+    /**
+     * @return GettableValueQueryInterface
+     */
+    public function asQueriesOnly();
 }

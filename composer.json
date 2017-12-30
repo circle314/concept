@@ -12,12 +12,13 @@
         }
     ],
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "circle314/cqs": "0.0.*"
     },
     "autoload": {
         "psr-4": {
             "Circle314\\Concept\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }

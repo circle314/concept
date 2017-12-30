@@ -2,6 +2,8 @@
 
 namespace Circle314\Concept\Value\Settable;
 
+use Circle314\Component\CQS\CQSCommandInterface;
+
 /**
  * An interface for settable value commands
  *
@@ -11,7 +13,7 @@ namespace Circle314\Concept\Value\Settable;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface SettableValueCommandInterface
+interface SettableValueCommandInterface extends CQSCommandInterface
 {
     public function setValue($value);
 }

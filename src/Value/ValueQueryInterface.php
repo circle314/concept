@@ -2,6 +2,7 @@
 
 namespace Circle314\Concept\Value;
 
+use Circle314\Component\CQS\CQSQueryInterface;
 use Circle314\Concept\Value\Defaultable\DefaultableValueQueryInterface;
 use Circle314\Concept\Value\Gettable\GettableValueQueryInterface;
 use Circle314\Concept\Value\Settable\SettableValueQueryInterface;
@@ -16,6 +17,7 @@ use Circle314\Concept\Value\Settable\SettableValueQueryInterface;
  * @link        https://github.com/circle314/concept
  */
 interface ValueQueryInterface extends
+    CQSQueryInterface,
     DefaultableValueQueryInterface,
     GettableValueQueryInterface,
     SettableValueQueryInterface

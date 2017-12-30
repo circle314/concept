@@ -2,6 +2,7 @@
 
 namespace Circle314\Concept\Value;
 
+use Circle314\Component\CQS\CQSCommandInterface;
 use Circle314\Concept\Value\Defaultable\DefaultableValueCommandInterface;
 use Circle314\Concept\Value\Gettable\GettableValueCommandInterface;
 use Circle314\Concept\Value\Settable\SettableValueCommandInterface;
@@ -16,6 +17,7 @@ use Circle314\Concept\Value\Settable\SettableValueCommandInterface;
  * @link        https://github.com/circle314/concept
  */
 interface ValueCommandInterface extends
+    CQSCommandInterface,
     DefaultableValueCommandInterface,
     GettableValueCommandInterface,
     SettableValueCommandInterface
