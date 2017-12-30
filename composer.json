@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "circle314/cqs": "0.0.*"
+        "circle314/cqs": "dev-master"
     },
     "autoload": {
         "psr-4": {
