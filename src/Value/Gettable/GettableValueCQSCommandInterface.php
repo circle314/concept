@@ -13,6 +13,6 @@ use Circle314\Component\CQS\CQSCommandInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface GettableValueCQSCommandInterface extends CQSCommandInterface, GettableValueCQSCastingInterface
+interface GettableValueCQSCommandInterface extends CQSCommandInterface
 {
 }

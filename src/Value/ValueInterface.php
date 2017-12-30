@@ -7,5 +7,4 @@ interface ValueInterface extends
     ValueCQSCommandInterface,
     ValueCQSQueryInterface
 {
-
 }

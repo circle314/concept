@@ -18,7 +18,6 @@ use Circle314\Concept\Value\Settable\SettableValueCQSCommandInterface;
  */
 interface ValueCQSCommandInterface extends
     CQSCommandInterface,
-    ValueCQSCastingInterface,
     DefaultableValueCQSCommandInterface,
     GettableValueCQSCommandInterface,
     SettableValueCQSCommandInterface

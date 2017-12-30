@@ -13,7 +13,7 @@ use Circle314\Component\CQS\CQSQueryInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface DefaultableValueCQSQueryInterface extends CQSQueryInterface, DefaultableValueCQSCastingInterface
+interface DefaultableValueCQSQueryInterface extends CQSQueryInterface
 {
     public function getDefaultValue();
     public function hasDefaultValue(): bool;

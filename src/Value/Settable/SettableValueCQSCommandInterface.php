@@ -13,7 +13,7 @@ use Circle314\Component\CQS\CQSCommandInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface SettableValueCQSCommandInterface extends CQSCommandInterface, SettableValueCQSCastingInterface
+interface SettableValueCQSCommandInterface extends CQSCommandInterface
 {
     public function setValue($value): void;
 }

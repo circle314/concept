@@ -13,6 +13,6 @@ use Circle314\Component\CQS\CQSQueryInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface SettableValueCQSQueryInterface extends CQSQueryInterface, SettableValueCQSCastingInterface
+interface SettableValueCQSQueryInterface extends CQSQueryInterface
 {
 }

@@ -13,7 +13,7 @@ use Circle314\Component\CQS\CQSCommandInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface IdentifierCQSCommandInterface extends CQSCommandInterface, IdentifierCQSCastingInterface
+interface IdentifierCQSCommandInterface extends CQSCommandInterface
 {
     /**
      * Deletes by ID

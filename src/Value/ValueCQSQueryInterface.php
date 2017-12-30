@@ -18,7 +18,6 @@ use Circle314\Concept\Value\Settable\SettableValueCQSQueryInterface;
  */
 interface ValueCQSQueryInterface extends
     CQSQueryInterface,
-    ValueCQSCastingInterface,
     DefaultableValueCQSQueryInterface,
     GettableValueCQSQueryInterface,
     SettableValueCQSQueryInterface
