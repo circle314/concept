@@ -3,9 +3,9 @@
 namespace Circle314\Concept\Value;
 
 use Circle314\Component\CQS\CQSQueryInterface;
-use Circle314\Concept\Value\Defaultable\DefaultableValueQueryInterface;
-use Circle314\Concept\Value\Gettable\GettableValueQueryInterface;
-use Circle314\Concept\Value\Settable\SettableValueQueryInterface;
+use Circle314\Concept\Value\Defaultable\DefaultableValueCQSQueryInterface;
+use Circle314\Concept\Value\Gettable\GettableValueCQSQueryInterface;
+use Circle314\Concept\Value\Settable\SettableValueCQSQueryInterface;
 
 /**
  * An interface for value queries
@@ -16,10 +16,11 @@ use Circle314\Concept\Value\Settable\SettableValueQueryInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface ValueQueryInterface extends
+interface ValueCQSQueryInterface extends
     CQSQueryInterface,
-    DefaultableValueQueryInterface,
-    GettableValueQueryInterface,
-    SettableValueQueryInterface
+    ValueCQSCastingInterface,
+    DefaultableValueCQSQueryInterface,
+    GettableValueCQSQueryInterface,
+    SettableValueCQSQueryInterface
 {
 }

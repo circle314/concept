@@ -2,8 +2,6 @@
 
 namespace Circle314\Concept\Value\Defaultable;
 
-use Circle314\Component\CQS\CQSInterface;
-
 /**
  * An interface for defaultable value commands and queries
  *
@@ -14,22 +12,9 @@ use Circle314\Component\CQS\CQSInterface;
  * @link        https://github.com/circle314/concept
  */
 interface DefaultableValueInterface extends
-    CQSInterface,
-    DefaultableValueCommandInterface,
-    DefaultableValueQueryInterface
+    DefaultableValueCQSCastingInterface,
+    DefaultableValueCQSCommandInterface,
+    DefaultableValueCQSQueryInterface
 {
-    /**
-     * @return DefaultableValueInterface
-     */
-    public function asCommandsAndQueries();
 
-    /**
-     * @return DefaultableValueCommandInterface
-     */
-    public function asCommandsOnly();
-
-    /**
-     * @return DefaultableValueQueryInterface
-     */
-    public function asQueriesOnly();
 }

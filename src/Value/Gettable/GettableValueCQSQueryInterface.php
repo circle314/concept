@@ -13,7 +13,7 @@ use Circle314\Component\CQS\CQSQueryInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface GettableValueQueryInterface extends CQSQueryInterface
+interface GettableValueCQSQueryInterface extends CQSQueryInterface, GettableValueCQSCastingInterface
 {
     public function getValue();
 }

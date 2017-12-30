@@ -1,7 +1,6 @@
 <?php
 
 namespace Circle314\Concept\Identification;
-use Circle314\Component\CQS\CQSInterface;
 
 /**
  * An interface for complete identification and manipulation of identifiers

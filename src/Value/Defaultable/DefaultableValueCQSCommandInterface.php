@@ -1,11 +1,11 @@
 <?php
 
-namespace Circle314\Concept\Value\Gettable;
+namespace Circle314\Concept\Value\Defaultable;
 
 use Circle314\Component\CQS\CQSCommandInterface;
 
 /**
- * An interface for gettable value commands
+ * An interface for defaultable value commands
  *
  * @package     Circle314\Concept
  * @author      Kjartan Johansen <kjartan@artofwar.cc>
@@ -13,6 +13,7 @@ use Circle314\Component\CQS\CQSCommandInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface GettableValueCommandInterface extends CQSCommandInterface
+interface DefaultableValueCQSCommandInterface extends CQSCommandInterface, DefaultableValueCQSCastingInterface
 {
+    public function applyDefaultValue(): void;
 }

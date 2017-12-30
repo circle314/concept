@@ -1,7 +1,6 @@
 <?php
 
 namespace Circle314\Concept\Value\Settable;
-use Circle314\Component\CQS\CQSInterface;
 
 /**
  * An interface for settable value commands and queries
@@ -13,22 +12,9 @@ use Circle314\Component\CQS\CQSInterface;
  * @link        https://github.com/circle314/concept
  */
 interface SettableValueInterface extends
-    CQSInterface,
-    SettableValueCommandInterface,
-    SettableValueQueryInterface
+    SettableValueCQSCastingInterface,
+    SettableValueCQSCommandInterface,
+    SettableValueCQSQueryInterface
 {
-    /**
-     * @return SettableValueInterface
-     */
-    public function asCommandsAndQueries();
 
-    /**
-     * @return SettableValueCommandInterface
-     */
-    public function asCommandsOnly();
-
-    /**
-     * @return SettableValueQueryInterface
-     */
-    public function asQueriesOnly();
 }

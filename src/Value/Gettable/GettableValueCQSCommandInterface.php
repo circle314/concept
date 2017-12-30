@@ -1,11 +1,11 @@
 <?php
 
-namespace Circle314\Concept\Value\Settable;
+namespace Circle314\Concept\Value\Gettable;
 
-use Circle314\Component\CQS\CQSQueryInterface;
+use Circle314\Component\CQS\CQSCommandInterface;
 
 /**
- * An interface for settable value queries
+ * An interface for gettable value commands
  *
  * @package     Circle314\Concept
  * @author      Kjartan Johansen <kjartan@artofwar.cc>
@@ -13,6 +13,6 @@ use Circle314\Component\CQS\CQSQueryInterface;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface SettableValueQueryInterface extends CQSQueryInterface
+interface GettableValueCQSCommandInterface extends CQSCommandInterface, GettableValueCQSCastingInterface
 {
 }
