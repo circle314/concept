@@ -2,8 +2,10 @@
 
 namespace Circle314\Concept\Identification;
 
+use Circle314\Component\CQS\CQSCommandInterface;
+
 /**
- * An interface for saving identifiers
+ * An interface identifier Commands
  *
  * @package     Circle314\Concept
  * @author      Kjartan Johansen <kjartan@artofwar.cc>
@@ -11,8 +13,16 @@ namespace Circle314\Concept\Identification;
  * @license     https://www.apache.org/licenses/LICENSE-2.0
  * @link        https://github.com/circle314/concept
  */
-interface SaveIdentifierInterface
+interface IdentifierCQSCommandInterface extends CQSCommandInterface, IdentifierCQSCastingInterface
 {
+    /**
+     * Deletes by ID
+     *
+     * @param $ID mixed
+     * @return mixed
+     */
+    public function deleteID($ID);
+
     /**
      * # Stores by ID
      * @param $ID mixed

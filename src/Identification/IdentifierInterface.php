@@ -13,22 +13,9 @@ use Circle314\Component\CQS\CQSInterface;
  * @link        https://github.com/circle314/concept
  */
 interface IdentifierInterface extends
-    CQSInterface,
-    IdentifierCommandInterface,
-    IdentifierQueryInterface
+    IdentifierCQSCastingInterface,
+    IdentifierCQSCommandInterface,
+    IdentifierCQSQueryInterface
 {
-    /**
-     * @return IdentifierInterface
-     */
-    public function asCommandsAndQueries();
 
-    /**
-     * @return IdentifierCommandInterface
-     */
-    public function asCommandsOnly();
-
-    /**
-     * @return IdentifierQueryInterface
-     */
-    public function asQueriesOnly();
 }
